@@ -1,17 +1,3 @@
-const RestaurantCard = (props) => {
-    const { resData } = props;
-    const { resName, cuisines, starRating, costForTwo, imageSource, deliveredIn } = resData?.data;
-    return (
-        <div className="restaurant-card">
-            <img className="food-image" src={imageSource} alt="foodImage" />
-            <h3>{resName}</h3>
-            <h4>{cuisines.join(" , ")}</h4>
-            <h4>{starRating} stars</h4>
-            <h4>₹{costForTwo / 10} FOR TWO</h4>
-            <h4>Delivered in {deliveredIn} minutes</h4>
-        </div>
-    )
-}
 const resList = [
 
     {
@@ -24,7 +10,7 @@ const resList = [
             starRating: "4.4",
             costForTwo: 4000,
             deliveredIn: "35",
-            imageSource: require('./images/delicious-food-table (1).jpg'),
+            imageSource: require('../images/delicious-food-table (1).jpg'),
         }
     },
     {
@@ -36,7 +22,7 @@ const resList = [
             starRating: "4.5",
             costForTwo: 2000,
             deliveredIn: "40",
-            imageSource: require('./images/delicious-food-table.jpg'),
+            imageSource: require('../images/delicious-food-table.jpg'),
 
         }
     },
@@ -49,7 +35,7 @@ const resList = [
             starRating: "4.4",
             costForTwo: 5000,
             deliveredIn: "35",
-            imageSource: require('./images/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware.jpg'),
+            imageSource: require('../images/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware.jpg'),
 
 
         }
@@ -62,7 +48,7 @@ const resList = [
             starRating: "4.5",
             costForTwo: 2000,
             deliveredIn: "40",
-            imageSource: require('./images/chocolate-milkshake-with-whipped-cream-chocolate-chips.jpg'),
+            imageSource: require('../images/chocolate-milkshake-with-whipped-cream-chocolate-chips.jpg'),
 
         }
     },
@@ -74,7 +60,7 @@ const resList = [
             starRating: "4.5",
             costForTwo: 4000,
             deliveredIn: "30",
-            imageSource: require('./images/delicious-indian-food-tray.jpg'),
+            imageSource: require('../images/delicious-indian-food-tray.jpg'),
 
         }
 
@@ -87,7 +73,7 @@ const resList = [
             starRating: "4.4",
             costForTwo: 4000,
             deliveredIn: "55",
-            imageSource: require('./images/delicious-food-table.jpg'),
+            imageSource: require('../images/delicious-food-table.jpg'),
         }
     },
     {
@@ -98,7 +84,7 @@ const resList = [
             starRating: "4.4",
             costForTwo: 4000,
             deliveredIn: "45",
-            imageSource: require('./images/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware.jpg'),
+            imageSource: require('../images/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware.jpg'),
         }
     },
     {
@@ -109,7 +95,7 @@ const resList = [
             starRating: "4.5",
             costForTwo: 4000,
             deliveredIn: "30",
-            imageSource: require('./images/chocolate-milkshake-with-whipped-cream-chocolate-chips.jpg'),
+            imageSource: require('../images/chocolate-milkshake-with-whipped-cream-chocolate-chips.jpg'),
 
         }
 
@@ -122,7 +108,7 @@ const resList = [
             starRating: "4.4",
             costForTwo: 4000,
             deliveredIn: "45",
-            imageSource: require('./images/delicious-indian-food-tray.jpg'),
+            imageSource: require('../images/delicious-indian-food-tray.jpg'),
         }
     },
     {
@@ -133,7 +119,7 @@ const resList = [
             starRating: "4.5",
             costForTwo: 2000,
             deliveredIn: "40",
-            imageSource: require('./images/delicious-food-table (1).jpg'),
+            imageSource: require('../images/delicious-food-table (1).jpg'),
 
         }
     },
@@ -145,7 +131,7 @@ const resList = [
             starRating: "4.4",
             costForTwo: 4000,
             deliveredIn: "45",
-            imageSource: require('./images/chocolate-milkshake-with-whipped-cream-chocolate-chips.jpg'),
+            imageSource: require('../images/chocolate-milkshake-with-whipped-cream-chocolate-chips.jpg'),
         }
     },
     {
@@ -156,7 +142,7 @@ const resList = [
             starRating: "4.5",
             costForTwo: 2000,
             deliveredIn: "40",
-            imageSource: require('./images/delicious-food-table.jpg'),
+            imageSource: require('../images/delicious-food-table.jpg'),
 
         }
     },
@@ -168,7 +154,7 @@ const resList = [
             starRating: "4.4",
             costForTwo: 4000,
             deliveredIn: "45",
-            imageSource: require('./images/delicious-food-table (1).jpg'),
+            imageSource: require('../images/delicious-food-table (1).jpg'),
         }
     },
     {
@@ -180,8 +166,10 @@ const resList = [
             starRating: "4.5",
             costForTwo: 2000,
             deliveredIn: "40",
-            imageSource: require('./images/delicious-food-table.jpg'),
+            imageSource: require('../images/delicious-food-table.jpg'),
 
         }
     },
 ];
+
+export default resList;
