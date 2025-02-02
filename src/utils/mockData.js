@@ -1,5 +1,4 @@
-const resList = [
-
+let resList = [
     {
 
         data:
@@ -116,7 +115,7 @@ const resList = [
             id: 10,
             resName: "MyFood",
             cuisines: ["Cold Coffee", "Snacks", "Juice"],
-            starRating: "4.5",
+            starRating: "4.9",
             costForTwo: 2000,
             deliveredIn: "40",
             imageSource: require('../images/delicious-food-table (1).jpg'),
@@ -128,7 +127,7 @@ const resList = [
             id: 11,
             resName: "TopFood",
             cuisines: ["Noodles", "Juice"],
-            starRating: "4.4",
+            starRating: "3.4",
             costForTwo: 4000,
             deliveredIn: "45",
             imageSource: require('../images/chocolate-milkshake-with-whipped-cream-chocolate-chips.jpg'),
@@ -139,7 +138,7 @@ const resList = [
             id: 12,
             resName: "MyFood",
             cuisines: ["Cold Coffee", "Snacks", "Juice"],
-            starRating: "4.5",
+            starRating: "3.6",
             costForTwo: 2000,
             deliveredIn: "40",
             imageSource: require('../images/delicious-food-table.jpg'),
@@ -151,7 +150,7 @@ const resList = [
             id: 13,
             resName: "TopFood",
             cuisines: ["Noodles", "Juice"],
-            starRating: "4.4",
+            starRating: "3.4",
             costForTwo: 4000,
             deliveredIn: "45",
             imageSource: require('../images/delicious-food-table (1).jpg'),
@@ -163,7 +162,7 @@ const resList = [
             id: 14,
             resName: "Food Villa",
             cuisines: ["Pizza", "Snacks", "Juice"],
-            starRating: "4.5",
+            starRating: "3.1",
             costForTwo: 2000,
             deliveredIn: "40",
             imageSource: require('../images/delicious-food-table.jpg'),

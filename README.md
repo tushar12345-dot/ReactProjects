@@ -27,4 +27,5 @@ Food ordering app Components-
  * Footer
  * -Copyright,Contact us,Links,Address
  * 
- 
+ # React Hooks
+ -Normal javascript utility functions
