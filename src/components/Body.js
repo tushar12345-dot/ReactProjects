@@ -1,14 +1,27 @@
 import RestaurantCard from "./RestaurantCard";
-import { useState ,useEffect} from "react";
+import { useState } from "react";
 import resList from "../utils/mockData";
 const Body = () => {
     const [listOfRestaurants, setListOfRestaurants] = useState(resList);
-    useEffect(() => {console.log("UseEffect") },[]);
+
+    const [searchText, setSearchText] = useState("");
     return (
         <div className="body">
             <div className="filter">
+                <div className="search">
+                    <input type="text" className="search-box" value={searchText} onChange={(e) => {
+                        setSearchText(e.target.value);
+                    }} />
+                    <button className="search-btn" onClick={() => {
+                        //filter the restaurant cards and update the UI
+                        const filteredRestaurants = listOfRestaurants.filter(
+                            (res) => res.data.resName.includes(searchText)
+                        );
+                        setListOfRestaurants(filteredRestaurants);
+                    }}>Search</button>
+                </div>
                 <button className="filter-btn" onClick={() => {
-                    filteredList = listOfRestaurants.filter(
+                    const filteredList = listOfRestaurants.filter(
                         (res) => res.data.starRating > 4
                     );
                     setListOfRestaurants(filteredList);
