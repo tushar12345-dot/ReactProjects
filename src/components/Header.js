@@ -8,14 +8,8 @@ const Header = () => {
             </div>
             <div className="nav-items">
                 <ul>
-                    <li onClick={() => {
-                        {
-                            console.log("clicked");
-                        }
-                    }} >Home</li>
-                    <li onClick={() => {
-                        { <AboutUs /> }
-                    }}>About Us</li>
+                    <li >Home</li>
+                    <li >About Us</li>
                     <li>Contact Us</li>
                     <li>Cart</li>
                 </ul>
